@@ -20,6 +20,9 @@ h1 {
 h2 {
   font-size: 3em;
 }
+p {
+  font-size: 1.5em;
+}
 /* utility */
 .ms_weight {
   font-weight: 600;
@@ -45,6 +48,10 @@ h2 {
 .fa-star {
   font-size: 40px;
   padding: 0 10px;
+}
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
 }
 /* Header top*/
 header {
@@ -95,16 +102,12 @@ header {
   width: 250px;
 }
 .avatar p {
-  font-size: 1.5em;
   padding-top: 20px;
 }
 .avatar span {
   display: block;
 }
-.wrapper {
-  width: 70%;
-  margin: 0 auto;
-}
+/* Portfolio */
 #portfolio {
   color: #2c3e50;
 }
@@ -150,6 +153,21 @@ header {
   opacity: 1;
   cursor: pointer;
 }
+/* About */
+#about {
+  background-color: #1abc9c;
+  color: white;
+}
+#about p {
+  padding: 30px 5px;
+}
+.btn_download {
+  border: 2px solid white;
+  padding: 20px 30px;
+}
+.btn_download:hover {
+  background-color: white;
+}
 /* Footer */
 .footer_top {
   background-color: #3a546d;
@@ -162,10 +180,10 @@ header {
   .header_top #logo span {
     font-size: 1.5em;
   }
-  .wrapper {
+  .jumbo .wrapper {
     width: 90%;
   }
-  .avatar h1 {
+  h1 {
     font-size: 3em;
   }
   .avatar hr {
@@ -174,12 +192,23 @@ header {
   .avatar p {
     font-size: 1em;
   }
-  #portfolio h2 {
+  h2 {
     font-size: 2.5em;
+  }
+  #about .wrapper {
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
-  #portfolio hr {
-    width: 100px;
+  #portfolio hr, #about hr {
+    width: 80px;
+  }
+  .portfolio_img {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  .overlay {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
