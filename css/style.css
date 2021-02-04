@@ -90,7 +90,7 @@ header {
   float: right;
   margin-top: 30px;
 }
-.btn_nav:hover {
+.btn_nav:hover, .btn_green:hover {
   color: white;
   background-color: #18937b;
 }
@@ -168,6 +168,29 @@ header {
 .btn_download:hover {
   background-color: white;
 }
+/* Contact */
+#contact {
+  color: #2c3e50;
+}
+#contact form {
+  padding: 50px 0;
+}
+#name, #email, #phone_number, #message {
+  font-size: 1.5em;
+  border: none;
+}
+form input {
+  margin: 30px 0;
+}
+form input:focus, form textarea:focus {
+  outline-width: 0;
+}
+.btn_green {
+  background-color: #1abc9c;
+  color: white;
+  padding: 20px 30px;
+  font-size: 1.2em;
+}
 /* Footer */
 .footer_top {
   background-color: #3a546d;
@@ -180,7 +203,7 @@ header {
   .header_top #logo span {
     font-size: 1.5em;
   }
-  .jumbo .wrapper {
+  .jumbo .wrapper, #contact .wrapper {
     width: 90%;
   }
   h1 {
@@ -200,7 +223,7 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
-  #portfolio hr, #about hr {
+  #portfolio hr, #about hr, #contact span hr {
     width: 80px;
   }
   .portfolio_img {
