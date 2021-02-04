@@ -20,6 +20,9 @@ h1 {
 h2 {
   font-size: 3em;
 }
+h3 {
+  font-size: 2.3em;
+}
 p {
   font-size: 1.5em;
 }
@@ -192,13 +195,39 @@ form input:focus, form textarea:focus {
   font-size: 1.2em;
 }
 /* Footer */
+footer {
+  color: white;
+}
 .footer_top {
   background-color: #3a546d;
 }
-
+.footer_top li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 5px;
+}
+.social_icon {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.social_icon:hover {
+  background-color: white;
+  color: black;
+}
+#start_bootstrap {
+  color: #1abc9c;
+}
 .footer_bottom {
   background-color: #2c3e50;
 }
+.footer_bottom #copyright > span::before {
+  content: '\00A9';
+}
+/* Media queries */
 @media screen and (max-width: 992px) {
   .header_top #logo span {
     font-size: 1.5em;
@@ -220,6 +249,12 @@ form input:focus, form textarea:focus {
   }
   #about .wrapper {
     width: 80%;
+  }
+  .footer_top .info {
+    padding: 10px;
+  }
+  .footer_top p {
+    font-size: 1.3em;
   }
 }
 @media screen and (max-width: 768px) {
